@@ -7,7 +7,7 @@ console.log(greetings.toUpperCase())
 let userId:number = 334477.55
 userId.toFixed()
 console.log(userId)
-userId = "tiwari"; // u will get an error if u assign sting to type number
+// userId = "tiwari"; // u will get an error if u assign sting to type number
 // userId.     after this dot u will get all the methods which related to the number only
 
 
