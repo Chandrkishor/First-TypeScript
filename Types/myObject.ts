@@ -29,7 +29,39 @@ let newObj={sub: "math",price:2,isNaN:false}
 createObj1(newObj)
 
 
+//! defining type in septate file and import where we need to use
+type User = {
+   name: string
+   email: string
+   isActive: boolean
+   creditCardDetails?:number // ? questing mark make it optional
+}
 
+function CreateUser(U: User) { }
+
+let UserVal = {
+   name: "Tiwari",
+   email:"tiwari@gmail.com",
+   isActive:true,
+}
+type __exModule= boolean;
+
+// export.__esModule = true;
+
+//* to accessing which is not defined
+// will gives and error just because IsActive is a boolean and we are assigning string
+// User.isActive = "t@gmail.com"
+// UserVal.name = true
+
+type cardNumber = {
+   cardNumber:string
+}
+type CardDate = {
+   cardDate:string
+}
+
+//* here we are defining new type base on the previous type and adding one more type along with them
+type cardDetails= cardNumber & CardDate & {cvv:number}
 
 
 
