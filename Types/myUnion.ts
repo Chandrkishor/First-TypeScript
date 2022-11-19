@@ -44,7 +44,8 @@ console.log(data, 'data', data1, "data1", data2, "data2")
 let seatAllotment: 'aisle' | "middle" | "window"
 // seatAllotment="test"    // this will gives an error just because here in seatAllotment we fixed the type so seatAllotment only we any of them,
 
+// seatAllotment="start" // will gives an error just because here we have choose in between which is defined.
 
 
 
-
+export{}
